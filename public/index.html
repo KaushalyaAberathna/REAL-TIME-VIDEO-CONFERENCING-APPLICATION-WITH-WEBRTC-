@@ -1,0 +1,44 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebRTC Video Conferencing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="roomJoin">
+    <h2>Join or Create a Room</h2>
+    <!-- User enters name and room -->
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <input type="text" id="roomInput" placeholder="Enter Room ID or Create" />
+    <button id="createRoomBtn">Create Room</button>
+    <button id="joinRoomBtn">Join Room</button>
+    <div id="roomListContainer">
+      <h3>Available Rooms:</h3>
+      <ul id="roomList"></ul>
+    </div>
+  </div>
+
+  <div id="videos" class="hidden">
+    <video id="localVideo" autoplay muted></video>
+  </div>
+
+  <div id="controls" class="hidden">
+    <button id="muteButton">Mute</button>
+    <button id="cameraButton">Stop Camera</button>
+    <button id="leaveButton" class="leave">Leave</button>
+  </div>
+
+  <div id="chat" class="hidden">
+    <div id="chatMessages"></div>
+    <div id="chatInput">
+      <input type="text" id="message" placeholder="Type a message..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+</body>
+</html>

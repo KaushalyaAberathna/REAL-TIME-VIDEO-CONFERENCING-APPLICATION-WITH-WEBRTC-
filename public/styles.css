@@ -1,0 +1,85 @@
+/* public/styles.css */
+body {
+    font-family: sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #roomListContainer {
+    margin-top: 20px;
+  }
+  
+  #roomList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #roomList li {
+    margin: 5px 0;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  #videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  video {
+    width: 300px;
+    border-radius: 10px;
+    background: black;
+  }
+  
+  #controls {
+    margin-top: 10px;
+  }
+  
+  #chat {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  #chatMessages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  #chatInput {
+    display: flex;
+    gap: 5px;
+  }
+  
+  #chatInput input {
+    flex: 1;
+  }
+  
+  .leave {
+    background-color: red;
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
